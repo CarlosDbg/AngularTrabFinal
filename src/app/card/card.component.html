@@ -1,0 +1,177 @@
+<mat-card>
+    <mat-card-header>
+        <div mat-card-avatar></div>
+
+        <mat-card-title>Batman</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="assets/batman.png">
+
+    <mat-card-content>
+       
+
+    </mat-card-content>
+    <mat-card-actions>
+        <p>
+            R$:15,00
+        </p>
+        
+    </mat-card-actions>
+
+</mat-card>
+
+<mat-card >
+    <mat-card-header>
+        <div mat-card-avatar class="lalaland" ></div>
+
+        <mat-card-title>La La Land</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="assets/lalaland.png">
+
+    <mat-card-content>
+    </mat-card-content>
+    <mat-card-actions>
+        <p>
+            R$:15,00
+        </p>
+        
+    </mat-card-actions>
+    
+
+</mat-card>
+
+<mat-card >
+    <mat-card-header>
+        <div mat-card-avatar class="harry"></div>
+
+        <mat-card-title>Harry Potter</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="assets/harry.png">
+
+    <mat-card-content>
+    </mat-card-content>
+
+    <mat-card-actions>
+        <p>
+            R$:15,00
+        </p>
+        
+    </mat-card-actions>
+
+</mat-card>
+
+<mat-card >
+    <mat-card-header>
+        <div mat-card-avatar class="beetleJuice"></div>
+
+        <mat-card-title>BeetleJuice</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="assets/addams.png">
+
+    <mat-card-content>
+
+    </mat-card-content>
+
+    <mat-card-actions>
+        <p>
+            R$:15,00
+        </p>
+        
+    </mat-card-actions>
+
+</mat-card>
+
+
+<mat-card >
+    <mat-card-header>
+        <div mat-card-avatar class="vingadores"></div>
+
+        <mat-card-title>Vinagdores Ultimato</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="assets/vingadores.png">
+
+    
+
+    <mat-card-actions>
+        <p>
+            R$:15,00
+        </p>
+        
+    </mat-card-actions>
+
+</mat-card>
+
+<mat-card >
+    <mat-card-header>
+        <div mat-card-avatar class="thor-ragn"></div>
+
+        <mat-card-title>Thor-Ragnarok</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="assets/thor.png">
+
+    <mat-card-content>
+
+    </mat-card-content>
+
+    <mat-card-actions>
+        <p>
+            R$:15,00
+        </p>
+        
+    </mat-card-actions>
+
+</mat-card> 
+
+
+
+
+<mat-card >
+    <mat-card-header>
+        <div mat-card-avatar class="thor-ragn"></div>
+
+        <mat-card-title>Thor-Ragnarok</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="assets/shazam.jpg">
+
+    <mat-card-content>
+    </mat-card-content>
+    <mat-card-actions>
+        <p>
+            22,45
+        </p>
+        
+    </mat-card-actions>
+
+</mat-card> 
+
+<mat-card *ngFor= "let filme of dadosService.filmes">
+    <mat-card-header>
+        
+
+        <mat-card-title>{{filme.titulo}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image [src]="filme.imagem">
+
+    <mat-card-content>
+
+    </mat-card-content>
+
+    <mat-card-actions>
+        <p>
+            R$:{{filme.valor}}
+        </p>
+        <div class="flex-spacer"></div>
+        <button mat-icon-button (click)="detalhar()"><mat-icon>add</mat-icon></button>
+    </mat-card-actions>
+
+</mat-card>
+
+
+
+
+
+
+
+
+
+
+
